@@ -2,6 +2,8 @@
 
 from sys import argv
 
+def main()
+
 argumento = argv
 c = len(argv)
 
@@ -16,3 +18,6 @@ if c > 2:
 
 for i in range(1, c):
     print(f"{i}: {argv[i]}")
+
+if __name__ == "__main__":
+    main()
