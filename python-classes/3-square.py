@@ -34,4 +34,4 @@ class Square:
         """
         funcion que retorna el area de un cuadrado
         """
-        return(self.__size ** 2)
+        return (self.__size ** 2)
