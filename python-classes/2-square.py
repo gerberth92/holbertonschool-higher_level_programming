@@ -22,13 +22,9 @@ class Square:
         Raises:
             Exception: muestra un mesaje de error si size no es (int) o es menor que 0.
         """
-        try:
-            if type(size) is not int:
-                raise Exception("size must be an integer")
-            elif size < 0:
-                raise Exception("size must be >= 0")
-            else:
-                self.__size = size
-
-        except Exception as error:
-            print(error)
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
