@@ -20,7 +20,8 @@ class Square:
             __size(int): es un entero igual o mayor que 0.
 
         Raises:
-            Exception: muestra un mesaje de error si size no es (int) o es menor que 0.
+            Exception: muestra un mesaje de error si size no es (int)
+            o es menor que 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
