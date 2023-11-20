@@ -50,4 +50,4 @@ def matrix_divided(matrix, div):
 
         new.append(list(map(lambda x: round(x / div, 2), element)))
 
-    return(new)
+    return (new)
