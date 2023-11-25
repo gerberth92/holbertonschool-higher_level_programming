@@ -3,6 +3,7 @@
 Este modulo tiene una funcion que agrega una string.
 """
 
+
 def append_write(filename="", text=""):
     """
     Esta funcion agrega una string al final del archivo.
