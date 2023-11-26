@@ -25,4 +25,4 @@ class Student:
         """
         Esta funcion retorna un diccionario con los atributos.
         """
-        return (self.__dic__)
+        return (self.__dict__)
