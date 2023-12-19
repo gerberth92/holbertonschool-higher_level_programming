@@ -31,6 +31,6 @@ class Student:
                 if hasattr(self, i):
                     new[i] = getattr(self, i)
             return (new)
-        
+
         else:
             return (self.__dict__.copy())
