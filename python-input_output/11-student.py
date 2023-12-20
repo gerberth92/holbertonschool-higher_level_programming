@@ -36,5 +36,11 @@ class Student:
             return (self.__dict__.copy())
 
     def reload_from_json(self, json):
+        """
+        Esta funcion reemplaza el valor de los atributos.
+
+        Args:
+            json: es un diccionario.
+        """
         for clave, valor in json.items():
             setattr(self, clave, valor)
