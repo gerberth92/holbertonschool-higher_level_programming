@@ -1,3 +1,2 @@
---muestra todas las bases de datos
-SHOW DATABASES;
-
+-- Muestra todas las bases de datos
+SHOW DATABASE;
