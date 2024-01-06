@@ -18,8 +18,8 @@ def main():
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states\
-                WHERE name LIKE N%\
-                ORDER BY id asc")
+                WHERE name LIKE 'N%'\
+                ORDER BY id ASC")
     states = cur.fetchall()
 
     for estado in states:
