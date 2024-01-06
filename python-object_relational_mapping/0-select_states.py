@@ -9,6 +9,11 @@ from sys import argv
 def main():
     """
     Este es el punto de entrada
+
+    Arguments:
+        argv[1]: mysql username
+        argv[2]: mysql password
+        argv[3]: database name
     """
     db = MySQLdb.connect(host="localhost",
                          user=argv[1],

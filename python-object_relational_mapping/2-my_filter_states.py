@@ -14,6 +14,7 @@ def main():
         argv[1]: mysql username
         argv[2]: mysql password
         argv[3]: database name
+        argv[4]: city name
     """
     db = MySQLdb.connect(host="localhost",
                          user=argv[1],
@@ -23,8 +24,8 @@ def main():
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states\
-                WHERE name LIKE BINARY 'N%'\
-                ORDER BY id ASC")
+                WHERE name = %s\
+                ORDER BY id ASC", argv[4])
     states = cur.fetchall()
 
     for estado in states:
