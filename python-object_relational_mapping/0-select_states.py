@@ -7,6 +7,9 @@ from sys import argv
 
 
 def main():
+    """
+    Este es el punto de entrada
+    """
     db = MySQLdb.connect(host="localhost",
                          user=argv[1],
                          passwd=argv[2],
