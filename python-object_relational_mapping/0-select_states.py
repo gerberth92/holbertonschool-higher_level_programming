@@ -17,7 +17,7 @@ def main():
                          port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
     states = cur.fetchall()
 
     for estado in states:
