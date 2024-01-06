@@ -1,11 +1,20 @@
 #!/usr/bin/python3
-import MySQLdb
 """
 Este modulo se conecta con un servidor sql.
 """
+import MySQLdb
+from sys import argv
 
 
-db = MySQLdb.connect(host="localhost", user="root", passwd="root", db="hbtn_0e_0_usa", port="3306")
+def main():
+    db = MySQLdb.connect(host="localhost",
+                         user=argv[1],
+                         passwd=argv[2],
+                         db=argv[3],
+                         port="3306")
 
-cur = db.cursor()
-cur.execute("SELECT * FROM states")
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states")
+
+if __name__ == "__main__":
+    main()
