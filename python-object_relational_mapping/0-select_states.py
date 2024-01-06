@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 import MySQLdb
+"""
+Este modulo se conecta con un servidor sql.
+"""
 
 
 db = MySQLdb.connect(host="localhost",
