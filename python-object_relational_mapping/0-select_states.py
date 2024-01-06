@@ -23,5 +23,8 @@ def main():
     for estado in states:
         print(estado)
 
+    cur.close()
+    db.close()
+
 if __name__ == "__main__":
     main()
