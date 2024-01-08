@@ -22,8 +22,8 @@ def main():
                          db=argv[3])
     
     cur = db.cursor()
-    cur.execute("SELECT id, name, name.states FROM cities\
-                JOIN states ON id.cities = id.states\
+    cur.execute("SELECT cities.id, cities.name, states.name FROM cities\
+                JOIN states ON cities.state_id = states.id\
                 ORDER BY id ASC")
 
     cities = cur.fetchall()
