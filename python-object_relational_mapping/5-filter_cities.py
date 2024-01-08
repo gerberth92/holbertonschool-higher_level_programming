@@ -23,15 +23,17 @@ def main():
                          db=argv[3])
     
     cur = db.cursor()
-    cur.execute("SELECT name FROM cities\
+    cur.execute("SELECT cities.name FROM cities\
                 JOIN states ON cities.state_id = states.id\
                 WHERE states.name = %s\
                 ORDER BY cities.id ASC", (argv[4],))
 
     cities = cur.fetchall()
 
-    for resgistro in cities:
-        print(resgistro)
+    new = []
+    for registro in cities:
+        new.append(registro[0])
+    print(", ".join(new))
 
     cur.close()
     db.close()
