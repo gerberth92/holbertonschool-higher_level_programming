@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     if states:
         states.name = "New Mexico"
-        sesion.commit
+        sesion.commit()
 
     sesion.close()
     
