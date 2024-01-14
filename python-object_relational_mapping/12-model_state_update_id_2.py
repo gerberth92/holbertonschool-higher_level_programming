@@ -26,11 +26,10 @@ if __name__ == "__main__":
     inicio = sessionmaker(bind=engine)
     sesion = inicio()
 
-    states = sesion.query(State).filter_by(id = 2).first()
+    states = sesion.query(State).get(2)
 
-    if states:
-        states.name = "New Mexico"
-        sesion.commit()
+    states.name = "New Mexico"
+    sesion.commit()
 
     sesion.close()
     
