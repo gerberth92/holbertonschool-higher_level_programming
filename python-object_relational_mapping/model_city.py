@@ -25,5 +25,5 @@ class City(Base):
                       nullable=False,)
     
 if __name__ == "__main__":
-    engine = create_engine('mysql+mysqldb://root:root@localhost:3306/hbtn_0e_6_usa',
+    engine = create_engine('mysql+mysqldb://root:root@localhost:3306/hbtn_0e_14_usa',
                            pool_pre_ping=True)

@@ -32,6 +32,5 @@ if __name__ == "__main__":
     for citie, state in cities:
         print("{}: ({}) {}".format(state.name, citie.id, citie.name))
 
-    sesion.commit()
     sesion.close()
     
